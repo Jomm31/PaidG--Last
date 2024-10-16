@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="776.0" prefWidth="658.0" style="-fx-background-color: #1b2838;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.paidg.GamesBoughtController">
+    <children>
+      <Button fx:id="GamesBought" layoutX="558.0" layoutY="734.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="86.0" style="-fx-background-color: #2a475e; -fx-background-radius: 10;" text="Go Back" textFill="#c7d5e0">
+         <font>
+            <Font name="Segoe UI Bold" size="14.0" />
+         </font>
+      </Button>
+        <TitledPane layoutX="14.0" layoutY="22.0" prefHeight="654.0" prefWidth="633.0" text="Games Bought">
+            <content>
+                <TableView fx:id="Table_Transaction" prefHeight="335.0" prefWidth="658.0">
+                    <columns>
+                        <TableColumn fx:id="Table_T_Transaction" prefWidth="130.0" text="Transaction ID" />
+                        <TableColumn fx:id="Table_T_col_userid" prefWidth="60.0" text="User ID" />
+                        <TableColumn fx:id="Table_T_col_game_id" prefWidth="60.0" text="Game ID" />
+                        <TableColumn fx:id="Table_T_col_Game_title" maxWidth="300.0" prefWidth="300.0" text="Game Title" />
+                        <TableColumn fx:id="Table_T_col_Date" prefWidth="100.0" text="Date" />
+                    </columns>
+                </TableView>
+            </content>
+        </TitledPane>
+    </children>
+</AnchorPane>
